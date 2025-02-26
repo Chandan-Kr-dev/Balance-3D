@@ -67,6 +67,11 @@ public class Gamemanager : MonoBehaviour
     {
         SceneManager.LoadScene(2);
     }
+    public void Restart(){
+        CheckPointManager.instance.ResetCheckpoint();
+        Time.timeScale=1f;
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
     public void Level1()
     {
         SceneManager.LoadScene(3);
@@ -74,6 +79,10 @@ public class Gamemanager : MonoBehaviour
     public void Level2()
     {
         SceneManager.LoadScene(4);
+    }
+    public void Level3()
+    {
+        SceneManager.LoadScene(5);
     }
 
 }

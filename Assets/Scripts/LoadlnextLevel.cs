@@ -7,7 +7,7 @@ public class LoadlnextLevel : MonoBehaviour
     
     public GameObject player;
     public Gamemanager gamemanager;
-    public GameObject WonUI;
+    // public GameObject WonUI;
     void Start()
     {
         player=GameObject.FindGameObjectWithTag("Player");
@@ -21,7 +21,7 @@ public class LoadlnextLevel : MonoBehaviour
     void OnTriggerEnter(Collider other)
     {
         if(other.tag=="Player"){
-            WonUI.SetActive(true);
+            // WonUI.SetActive(true);
             StartCoroutine(Playwonanim());
             gamemanager.LoadnextLevel();
             CheckPointManager.instance.ResetCheckpoint();

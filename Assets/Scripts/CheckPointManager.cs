@@ -27,7 +27,7 @@ public class CheckPointManager : MonoBehaviour
         lastCheckpointPosition = position;
         checkpointSet = true;
         respawnCount = 0; // ✅ Reset respawn count when a new checkpoint is reached
-        Debug.Log("Checkpoint set at: " + position);
+        
     }
 
     public Vector3 GetCheckpoint()
@@ -37,7 +37,7 @@ public class CheckPointManager : MonoBehaviour
 
     public bool CanRespawn()
     {
-        Debug.Log("CanRespawn() called - Checkpoint Set: " + checkpointSet + " | Respawn Count: " + respawnCount);
+        
         return checkpointSet && respawnCount < maxRespawns;
     }
 
@@ -46,7 +46,7 @@ public class CheckPointManager : MonoBehaviour
         if (checkpointSet)
         {
             respawnCount++; // ✅ Now it correctly increases
-            Debug.Log("Respawn Count Increased: " + respawnCount);
+            
         }
     }
 
@@ -54,7 +54,7 @@ public class CheckPointManager : MonoBehaviour
     {
         checkpointSet = false;
         respawnCount = 0;
-        Debug.Log("Checkpoint Reset");
+        
     }
 
     public bool HasCheckpoint()

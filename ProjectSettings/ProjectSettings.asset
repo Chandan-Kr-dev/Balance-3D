@@ -13,7 +13,7 @@ PlayerSettings:
   useOnDemandResources: 0
   accelerometerFrequency: 60
   companyName: Kalpkant Productions
-  productName: Balance-3d
+  productName: Gravity Flux
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0.13725491, g: 0.12156863, b: 0.1254902, a: 1}
@@ -294,7 +294,7 @@ PlayerSettings:
   - m_BuildTarget: 
     m_Icons:
     - serializedVersion: 2
-      m_Icon: {fileID: 2800000, guid: 2b01862a6489f7d499c573b2a967d919, type: 3}
+      m_Icon: {fileID: 2800000, guid: ccb17d1eb275d5c419ae7be02506c48d, type: 3}
       m_Width: 128
       m_Height: 128
       m_Kind: 0

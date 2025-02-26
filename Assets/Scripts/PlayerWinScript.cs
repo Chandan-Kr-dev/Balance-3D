@@ -7,6 +7,7 @@ public class PlayerWinScript : MonoBehaviour
     public GameObject player;
     public Transform transformm;
     public GameObject Camera;
+    public GameObject wonUI;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -23,7 +24,7 @@ public class PlayerWinScript : MonoBehaviour
     {
         if(other.tag=="Player"){
             animator.SetBool("won",true);
-           
+            wonUI.SetActive(true);
             
             player.transform.SetParent(transformm);
             Camera.GetComponent<CameraFollow>().enabled=false;
